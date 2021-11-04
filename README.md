@@ -15,7 +15,7 @@ $ kubectl create secret docker-registry cr-token \
 To install this provider type:
 
 ```sh
-$ helm repo add krateo-runtime-providers https://krateoplatformops.io/krateo-runtime-providers
+$ helm repo add krateo-runtime-providers https://krateoplatformops.github.io/krateo-runtime-providers 
 $ helm repo update
-$ helm install provider-argocd-token --namespace $(NAMESPACE) krateo-runtime-providers/provider-argocd-token
+$ helm install provider-argocd-token --namespace $(NAMESPACE) krateo-runtime-providers/argocd-token
 ```
