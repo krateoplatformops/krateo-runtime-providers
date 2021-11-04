@@ -1,0 +1,55 @@
+{{- if .Values.clusterRole.create -}}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: {{ include "provider-argocd-token.serviceAccountName" . }}
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  - pods/portforward
+  - services
+  - services/finalizers
+  - endpoints
+  - events
+  - configmaps
+  - secrets
+  - leases
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - argocd.krateoplatformops.io
+  resources:
+  - providerconfigs
+  - providerconfigs/status
+  - providerconfigusages
+  - providerconfigusages/status
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - tokens.argocd.krateoplatformops.io
+  resources:
+  - tokens
+  - tokens/status
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+{{- end }}
