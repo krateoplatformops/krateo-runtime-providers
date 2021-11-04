@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  argocd-token:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-11-04T17:31:29.107797491+01:00"
+    description: A Helm chart for the hKrateo Runtime Provider ArgoCD Tokens
+    digest: eb883976776e6af59b8049ff8bd9e7a176d5974cbdc68d06fd9e921b648ad527
+    name: argocd-token
+    type: application
+    urls:
+    - https://github.com/krateoplatformops/krateo-runtime-providers/releases/download/argocd-token-0.1.0/argocd-token-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-11-04T17:31:29.107839143+01:00"
