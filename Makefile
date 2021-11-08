@@ -45,7 +45,7 @@ vsphere.package: clean
 	$(HELM) package charts/provider-vsphere --destination $(PACKAGE_PATH)
 
 ## vsphere.upload: Upload the vSphere Provider package
-vsphere.upload: vsphere.package
+vsphere.upload:
 	$(CR) upload --owner $(ORG_NAME) --git-repo $(GIT_REPO) --package-path $(PACKAGE_PATH)
 	$(CR) index --owner $(ORG_NAME) --git-repo $(GIT_REPO) --charts-repo $(CHART_REPO_URL) \
 	--package-path $(PACKAGE_PATH) --push
