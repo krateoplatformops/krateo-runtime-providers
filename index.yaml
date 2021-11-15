@@ -11,6 +11,17 @@ entries:
     urls:
     - https://github.com/krateoplatformops/krateo-runtime-providers/releases/download/argocd-token-0.1.0/argocd-token-0.1.0.tgz
     version: 0.1.0
+  license:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2021-11-15T11:48:15.036115783+01:00"
+    description: A Helm chart for the Krateo Runtime Licenses
+    digest: fd90adeffb01d3242ac4218c94f55bd53ec5a734f79fac14eb150f7af21054c3
+    name: license
+    type: application
+    urls:
+    - https://github.com/krateoplatformops/krateo-runtime-providers/releases/download/license-0.0.0/license-0.0.0.tgz
+    version: 0.0.0
   vsphere:
   - apiVersion: v2
     appVersion: 0.0.0
@@ -22,4 +33,4 @@ entries:
     urls:
     - https://github.com/krateoplatformops/krateo-runtime-providers/releases/download/vsphere-0.1.0/vsphere-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-08T17:16:28.91171097+01:00"
+generated: "2021-11-15T11:48:15.036144398+01:00"
