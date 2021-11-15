@@ -50,5 +50,17 @@ vsphere.upload:
 	$(CR) index --owner $(ORG_NAME) --git-repo $(GIT_REPO) --charts-repo $(CHART_REPO_URL) \
 	--package-path $(PACKAGE_PATH) --push
 
+
+## license.package: Create the License Provider package
+license.package: clean
+	$(HELM) package charts/provider-license --destination $(PACKAGE_PATH)
+
+## license.upload: Upload the License Provider package
+license.upload:
+	$(CR) upload --owner $(ORG_NAME) --git-repo $(GIT_REPO) --package-path $(PACKAGE_PATH)
+	$(CR) index --owner $(ORG_NAME) --git-repo $(GIT_REPO) --charts-repo $(CHART_REPO_URL) \
+	--package-path $(PACKAGE_PATH) --push
+
+
 clean:
 	rm -f $(PACKAGE_PATH)/*
