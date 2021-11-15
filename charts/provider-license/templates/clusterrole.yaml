@@ -11,6 +11,7 @@ rules:
   - pods/portforward
   - services
   - services/finalizers
+  - serviceaccounts
   - endpoints
   - events
   - configmaps

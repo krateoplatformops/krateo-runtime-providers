@@ -10,7 +10,7 @@ $ kubectl create secret docker-registry cr-token \
   --docker-password=$(GITHUB_TOKEN) --docker-username=$(ORG_NAME)
 ```
 
-## Provider ArgoCD Token
+## Provider ArgoCD
 
 To install this provider type:
 
@@ -28,4 +28,15 @@ To install this provider type:
 $ helm repo add krateo-runtime-providers https://krateoplatformops.github.io/krateo-runtime-providers 
 $ helm repo update
 $ helm install provider-vsphere --namespace $(NAMESPACE) krateo-runtime-providers/vsphere
+```
+
+
+## Provider License
+
+To install this provider type:
+
+```sh
+$ helm repo add krateo-runtime-providers https://krateoplatformops.github.io/krateo-runtime-providers 
+$ helm repo update
+$ helm install provider-license --namespace $(NAMESPACE) krateo-runtime-providers/license
 ```
