@@ -13,6 +13,16 @@ entries:
     version: 0.1.0
   license:
   - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-11-17T11:25:01.644626088+01:00"
+    description: A Helm chart for the Krateo Runtime Licenses
+    digest: b171b8daaf00ce1738b511075467870782634f35b73589546907aa4b5ebdce16
+    name: license
+    type: application
+    urls:
+    - https://github.com/krateoplatformops/krateo-runtime-providers/releases/download/license-0.1.0/license-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
     appVersion: 0.0.0
     created: "2021-11-15T11:48:15.036115783+01:00"
     description: A Helm chart for the Krateo Runtime Licenses
@@ -33,4 +43,4 @@ entries:
     urls:
     - https://github.com/krateoplatformops/krateo-runtime-providers/releases/download/vsphere-0.1.0/vsphere-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-15T11:48:15.036144398+01:00"
+generated: "2021-11-17T11:25:01.644659231+01:00"
